@@ -1,1 +1,61 @@
 /* Add your own styles */
+body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: #FA4;
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(98, 110, 122);
+    gap: 20px;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffff;
+}
+
+.map{
+    float: left;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#country{
+    border: 0cm;
+    border-radius: 6px;
+    width: 450px;
+    padding: 4px;
+    margin-top: 50px;
+}
+
+#lookup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 9px 15px;
+    border: 0cm;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(161, 93, 161);
+    color: #ffff;  
+}
+
+#result{
+    margin-top: 15px;
+}

@@ -1,5 +1,5 @@
 // Wait for the page to finish load
-window.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function(){
     const button = document.getElementById("lookup");
     const results = document.getElementById("result");
 
@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", function(){
         fetch("world.php?country=" + encodeURIComponent(country))  // AJAX request
             .then(response => response.text())
             .then(data => {
-                data = results.innerHTML;
+                results.innerHTML = data;
             })
             .catch(error => {
                 console.error("Error:", error);
