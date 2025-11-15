@@ -3,15 +3,12 @@ document.addEventListener("DOMContentLoaded", function(){
     const button = document.getElementById("lookup");
     const results = document.getElementById("result");
     const btn = document.getElementById("lookup-cities");
-    const countryData = document.getElementById("country").value;
 
     // User clicks the Lookup Country Button
-    button.addEventListener("click", function(event){
-
-        // prevent page from reloading
-        event.preventDefault();
+    button.addEventListener("click", function(){
         
         // Santize user input
+        const countryData = document.getElementById("country").value;
         const country = countryData.replace(/</g, "&lt;").replace(/>/g, "&gt;").trim();
 
         // Look up Country information
@@ -27,10 +24,9 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     // User clicks the Lookup Cities Button
-    btn.addEventListener("click", function(e){
-        e.preventDefault();
-
+    btn.addEventListener("click", function(){
         // Santize user input
+        const countryData = document.getElementById("country").value;
         const country = countryData.replace(/</g, "&lt;").replace(/>/g, "&gt;").trim();
 
         // Look up Ciites information
