@@ -3,7 +3,9 @@ body{
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
-    background-color: rgb(104, 204, 204);
+    background-color: rgb(162, 238, 238);
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 header{
@@ -72,7 +74,7 @@ main{
 }
 
 table{
-    width: auto;
+    
     border-collapse: collapse;
 }
 
@@ -86,4 +88,12 @@ th:nth-child(2){
 }
 th:nth-child(3){
     width: 200px;
+}
+
+tr:nth-child(even){
+    background-color: rgb(162, 238, 238);
+}
+
+tr:nth-child(odd){
+    background-color: white;
 }
