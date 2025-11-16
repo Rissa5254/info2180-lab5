@@ -35,12 +35,9 @@ main{
 #controls{
     text-align: center;
 }
-#controls input{
-    display: block;
-}
 
 #controls button{
-    display: inline-block;
+    align-items: center;
     margin-top: 15px;
     border-radius: 5px;
     padding: 9px 15px;
@@ -62,7 +59,6 @@ main{
     margin-top: 50px;
 }
 
-
 #lookup{
     background-color: rgb(163, 63, 163);
 }
@@ -73,4 +69,21 @@ main{
 
 #result{
     margin-top: 15px;
+}
+
+table{
+    width: auto;
+    border-collapse: collapse;
+}
+
+table td, table th{
+    padding: 5px;
+    border: 1px solid black;   
+}
+
+th:nth-child(2){
+    width: 250px   
+}
+th:nth-child(3){
+    width: 200px;
 }
